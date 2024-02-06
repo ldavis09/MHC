@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Home	</title>
-	<atom:link href="/Users/laura/Documents/GitHub/MHC/sample-page/feed/" rel="self" type="application/rss+xml" />
-	<link>/Users/laura/Documents/GitHub/MHC/</link>
+	<atom:link href="https://ldavis09.github.io/MHC/sample-page/feed/" rel="self" type="application/rss+xml" />
+	<link>https://ldavis09.github.io/MHC/</link>
 	<description>Supporting heroes, safeguarding families.</description>
 	<lastBuildDate>Sun, 04 Feb 2024 03:52:26 +0000</lastBuildDate>
 	<sy:updatePeriod>

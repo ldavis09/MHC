@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Sample Post #3	</title>
-	<atom:link href="/Users/laura/Documents/GitHub/MHC/sample-post-3/feed/" rel="self" type="application/rss+xml" />
-	<link>/Users/laura/Documents/GitHub/MHC/sample-post-3/</link>
+	<atom:link href="https://ldavis09.github.io/MHC/sample-post-3/feed/" rel="self" type="application/rss+xml" />
+	<link>https://ldavis09.github.io/MHC/sample-post-3/</link>
 	<description>Supporting heroes, safeguarding families.</description>
 	<lastBuildDate>Tue, 16 Jan 2024 03:11:34 +0000</lastBuildDate>
 	<sy:updatePeriod>

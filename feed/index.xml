@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Military Housing Coalition</title>
-	<atom:link href="/Users/laura/Documents/GitHub/MHC/feed/" rel="self" type="application/rss+xml" />
-	<link>/Users/laura/Documents/GitHub/MHC/</link>
+	<atom:link href="https://ldavis09.github.io/MHC/feed/" rel="self" type="application/rss+xml" />
+	<link>https://ldavis09.github.io/MHC/</link>
 	<description>Supporting heroes, safeguarding families.</description>
 	<lastBuildDate>Tue, 16 Jan 2024 03:11:34 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,21 +21,21 @@
 	<generator>https://wordpress.org/?v=6.4.3</generator>
 
 <image>
-	<url>/Users/laura/Documents/GitHub/MHC/wp-content/uploads/cropped-Favicon-32x32.png</url>
+	<url>https://ldavis09.github.io/MHC/wp-content/uploads/cropped-Favicon-32x32.png</url>
 	<title>Military Housing Coalition</title>
-	<link>/Users/laura/Documents/GitHub/MHC/</link>
+	<link>https://ldavis09.github.io/MHC/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Sample Post #3</title>
-		<link>/Users/laura/Documents/GitHub/MHC/sample-post-3/</link>
-					<comments>/Users/laura/Documents/GitHub/MHC/sample-post-3/#respond</comments>
+		<link>https://ldavis09.github.io/MHC/sample-post-3/</link>
+					<comments>https://ldavis09.github.io/MHC/sample-post-3/#respond</comments>
 		
 		<dc:creator><![CDATA[Laura]]></dc:creator>
 		<pubDate>Tue, 16 Jan 2024 03:11:33 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/Users/laura/Documents/GitHub/MHC/?p=14</guid>
+		<guid isPermaLink="false">https://ldavis09.github.io/MHC/?p=14</guid>
 
 					<description><![CDATA[Sometimes it’s nice to put in text just to get an idea of how text will fill in a space on your website.&#160; Traditionally our industry has used Lorem Ipsum, which is placeholder text written in Latin. Unfortunately, not everyone is familiar with Lorem Ipsum and that can lead to confusion. I can’t tell you [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -54,20 +54,20 @@
 <p>If you’re curious, this is Website Ipsum. It was specifically developed for the use on development websites. Other than being less confusing than other Ipsum’s, Website Ipsum is also formatted in patterns more similar to how real copy is formatted on the web today.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/Users/laura/Documents/GitHub/MHC/sample-post-3/feed/</wfw:commentRss>
+					<wfw:commentRss>https://ldavis09.github.io/MHC/sample-post-3/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Sample Post #2</title>
-		<link>/Users/laura/Documents/GitHub/MHC/sample-post-2/</link>
-					<comments>/Users/laura/Documents/GitHub/MHC/sample-post-2/#respond</comments>
+		<link>https://ldavis09.github.io/MHC/sample-post-2/</link>
+					<comments>https://ldavis09.github.io/MHC/sample-post-2/#respond</comments>
 		
 		<dc:creator><![CDATA[Laura]]></dc:creator>
 		<pubDate>Tue, 16 Jan 2024 03:10:51 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/Users/laura/Documents/GitHub/MHC/?p=12</guid>
+		<guid isPermaLink="false">https://ldavis09.github.io/MHC/?p=12</guid>
 
 					<description><![CDATA[Sometimes it’s nice to put in text just to get an idea of how text will fill in a space on your website.&#160; Traditionally our industry has used Lorem Ipsum, which is placeholder text written in Latin. Unfortunately, not everyone is familiar with Lorem Ipsum and that can lead to confusion. I can’t tell you [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -86,20 +86,20 @@
 <p>If you’re curious, this is Website Ipsum. It was specifically developed for the use on development websites. Other than being less confusing than other Ipsum’s, Website Ipsum is also formatted in patterns more similar to how real copy is formatted on the web today.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/Users/laura/Documents/GitHub/MHC/sample-post-2/feed/</wfw:commentRss>
+					<wfw:commentRss>https://ldavis09.github.io/MHC/sample-post-2/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Sample Post #1</title>
-		<link>/Users/laura/Documents/GitHub/MHC/sample-post-1/</link>
-					<comments>/Users/laura/Documents/GitHub/MHC/sample-post-1/#respond</comments>
+		<link>https://ldavis09.github.io/MHC/sample-post-1/</link>
+					<comments>https://ldavis09.github.io/MHC/sample-post-1/#respond</comments>
 		
 		<dc:creator><![CDATA[Laura]]></dc:creator>
 		<pubDate>Tue, 16 Jan 2024 03:08:21 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/Users/laura/Documents/GitHub/MHC/?p=8</guid>
+		<guid isPermaLink="false">https://ldavis09.github.io/MHC/?p=8</guid>
 
 					<description><![CDATA[This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. Once we have your content finalized, we’ll replace this placeholder text with your real content. Sometimes it’s nice to put in text just to get an idea of how text will fill [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -114,7 +114,7 @@
 <p>Traditionally our industry has used Lorem Ipsum, which is placeholder text written in Latin. Unfortunately, not everyone is familiar with Lorem Ipsum and that can lead to confusion. I can’t tell you how many times clients have asked me why their website is in another language!</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/Users/laura/Documents/GitHub/MHC/sample-post-1/feed/</wfw:commentRss>
+					<wfw:commentRss>https://ldavis09.github.io/MHC/sample-post-1/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
