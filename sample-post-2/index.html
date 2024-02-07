@@ -44,9 +44,31 @@
 <link rel="stylesheet" id="bricks-child-css" href="https://ldavis09.github.io/MHC/wp-content/themes/bricks-child/style.css?ver=1705370380" media="all">
 <link rel="stylesheet" id="bricks-default-content-css" href="https://ldavis09.github.io/MHC/wp-content/themes/bricks/assets/css/frontend/content-default.min.css?ver=1705370348" media="all">
 <link rel="stylesheet" id="bricks-font-awesome-6-brands-css" href="https://ldavis09.github.io/MHC/wp-content/themes/bricks/assets/css/libs/font-awesome-6-brands.min.css?ver=1705370348" media="all">
-<link rel="stylesheet" id="bricks-font-awesome-6-css" href="https://ldavis09.github.io/MHC/wp-content/themes/bricks/assets/css/libs/font-awesome-6.min.css?ver=1705370348" media="all">
 <link rel="stylesheet" id="bricks-themify-icons-css" href="https://ldavis09.github.io/MHC/wp-content/themes/bricks/assets/css/libs/themify-icons.min.css?ver=1705370348" media="all">
-<style id="bricks-frontend-inline-inline-css">/* THEME STYLE CSS */
+<style id="bricks-frontend-inline-inline-css">/* COLOR VARS */
+:root {
+--bricks-color-e6eeca: #f5f5f5;
+--bricks-color-634a3f: #e0e0e0;
+--bricks-color-2f6fc9: #9e9e9e;
+--bricks-color-f7fc50: #616161;
+--bricks-color-7720a1: #424242;
+--bricks-color-26cd5b: #212121;
+--bricks-color-17a03d: #ffeb3b;
+--bricks-color-9363a5: #ffc107;
+--bricks-color-1ff08d: #ff9800;
+--bricks-color-146b25: #ff5722;
+--bricks-color-7fcd0d: #f44336;
+--bricks-color-0c1bc1: #9c27b0;
+--bricks-color-15b377: #2196f3;
+--bricks-color-dd34d4: #03a9f4;
+--bricks-color-bb4762: #81D4FA;
+--bricks-color-69c777: #4caf50;
+--bricks-color-2a344b: #8bc34a;
+--bricks-color-1f789d: #cddc39;
+--bricks-color-llnyjy: rgba(73, 57, 121, 0.95);
+}
+
+/* THEME STYLE CSS */
 
 /* BREAKPOINT: Desktop (BASE) */
  body {font-family: "Raleway"; font-weight: 400; font-style: normal}
@@ -77,16 +99,12 @@
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-#brxe-d22824 {padding-top: 2px; padding-bottom: 2px; margin-top: 2px; margin-bottom: 2px}
+#brxe-d22824 {padding-top: 2px; padding-bottom: 2px; margin-top: 2px; margin-bottom: 2px; max-width: 8%}
 }
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
-#brxe-d22824 {align-self: center}
+#brxe-d22824 {align-self: center; max-width: 10%}
 }
-
-/* BREAKPOINT: Desktop (BASE) */
-#brxe-40a4a0 {margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px}
-
 
 /* BREAKPOINT: Desktop (BASE) */
 #brxe-de7168 {background-color: #424242}
@@ -96,6 +114,11 @@
 #brxe-dec6d4 {background-color: #424242}
 
 
+/* BREAKPOINT: Mobile landscape */
+@media (max-width: 767px) {
+#brxe-b3d882 {align-items: center; align-self: flex-start !important}
+}
+
 /* BREAKPOINT: Desktop (BASE) */
 #brxe-a96d31 .brx-dropdown-content > li [aria-current="page"] {background-color: #616161}
 #brxe-a96d31 .brx-dropdown-content > li .aria-current {background-color: #616161}
@@ -104,14 +127,17 @@
 #brxe-a96d31 > .brx-dropdown-content::before {border-width: 20px; border-bottom-color: #424242; right: 25px; left: 25px}
 #brxe-a96d31 > .brx-dropdown-content {transform:  translateY(30px)}
 #brxe-a96d31.open > .brx-dropdown-content {transform:  translateY(15px)}
-#brxe-a96d31 .brx-dropdown-content > li > a {justify-content: flex-start; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px}
-#brxe-a96d31 .brx-submenu-toggle {justify-content: flex-start}
+#brxe-a96d31 .brx-dropdown-content > li > a {justify-content: center; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px}
+#brxe-a96d31 .brx-submenu-toggle {justify-content: center}
 #brxe-a96d31 .brx-dropdown-content .brx-submenu-toggle > * {padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px}
 #brxe-a96d31.brx-has-megamenu .brx-dropdown-content > * {padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px}
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
+#brxe-a96d31 {align-self: center}
 #brxe-a96d31 > .brx-dropdown-content::before {right: 25px}
+#brxe-a96d31 .brx-dropdown-content > li > a {justify-content: center}
+#brxe-a96d31 .brx-submenu-toggle {justify-content: center}
 }
 
 /* BREAKPOINT: Desktop (BASE) */
@@ -152,13 +178,11 @@
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-#brxe-7477d3 {align-self: center !important; align-items: center; justify-content: center; flex-direction: column; flex-wrap: nowrap}
+#brxe-7477d3 {flex-direction: column; flex-wrap: nowrap}
 }
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
-#brxe-7477d3 > .brxe-container {margin-top: 2px; margin-bottom: 2px}
-#brxe-7477d3 > .brxe-block {margin-top: 2px; margin-bottom: 2px}
-#brxe-7477d3 > .brxe-div {margin-top: 2px; margin-bottom: 2px}
+#brxe-7477d3 {border-radius: 5px}
 }
 
 /* BREAKPOINT: Mobile landscape */
@@ -198,25 +222,23 @@
 /* BREAKPOINT: Desktop (BASE) */
 #brxe-ec7002 {align-self: center; align-items: center; font-family: "Raleway"; font-weight: 600; padding-right: 10px; padding-left: 10px; justify-content: space-evenly; width: 100%; flex-direction: row}
 #brxe-ec7002 .brx-dropdown-content {background-color: #424242; color: #f5f5f5}
-#brxe-ec7002.brx-open .brx-nav-nested-items {align-items: center; right: 33%; left: 33%; width: auto; background-color: #920723}
+#brxe-ec7002.brx-open .brx-nav-nested-items {align-items: center; right: 25%; left: 65%; width: auto; background-color: #493979; height: 45%; justify-content: space-evenly}
 #brxe-ec7002.brx-open .brx-nav-nested-items > * {justify-content: center}
 #brxe-ec7002.brx-open .brx-submenu-toggle {justify-content: center}
-#brxe-ec7002 .brx-nav-nested-items > li > a {padding-right: 4px; padding-left: 4px}
-#brxe-ec7002 .brx-nav-nested-items > li > .brx-submenu-toggle > * {padding-right: 4px; padding-left: 4px}
-#brxe-ec7002.brx-open .brx-nav-nested-items > li > button.brx-toggle-div {padding-right: 4px; padding-left: 4px}
+#brxe-ec7002 .brx-nav-nested-items > li > a {padding-right: 2px; padding-left: 2px}
+#brxe-ec7002 .brx-nav-nested-items > li > .brx-submenu-toggle > * {padding-right: 2px; padding-left: 2px}
+#brxe-ec7002.brx-open .brx-nav-nested-items > li > button.brx-toggle-div {padding-right: 2px; padding-left: 2px}
 #brxe-ec7002 .brx-nav-nested-items > li > [aria-current="page"] {border-radius: 5px; background-color: rgba(40, 146, 184, 0.9)}
 #brxe-ec7002 .brx-nav-nested-items > li > .brx-submenu-toggle.aria-current {border-radius: 5px; background-color: rgba(40, 146, 184, 0.9)}
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-#brxe-ec7002 {align-self: center; align-items: center; text-align: center; flex-direction: column}
-#brxe-ec7002.brx-open .brx-nav-nested-items {align-items: center; justify-content: space-evenly; width: 20%; right: 33%; left: 33%; width: auto; background-color: #6c0416; height: 45%}
-#brxe-ec7002.brx-open .brx-submenu-toggle {justify-content: center}
-#brxe-ec7002.brx-open li.menu-item {text-align: center}
+#brxe-ec7002 {align-self: stretch; align-items: stretch; text-align: center; flex-direction: row; padding-right: 10px; padding-left: 10px; justify-content: space-between; margin-right: 5px; margin-left: 5px}
+#brxe-ec7002.brx-open .brx-nav-nested-items {align-items: center; justify-content: space-evenly; width: 20%; background-color: var(--bricks-color-llnyjy); height: 40%; top: 10%; right: 10%; width: auto}
 }
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
-#brxe-ec7002.brx-open .brx-nav-nested-items {align-items: center; background-color: #6c0416; height: 45%}
+#brxe-ec7002.brx-open .brx-nav-nested-items {align-items: center; background-color: var(--bricks-color-llnyjy); height: 40%; width: 25%}
 #brxe-ec7002.brx-open .brx-submenu-toggle {justify-content: center}
 #brxe-ec7002.brx-open li.menu-item {text-align: center}
 }
@@ -226,7 +248,7 @@
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-#brxe-1e57a0 {align-self: center !important; justify-content: center; align-items: center; width: 100%}
+#brxe-1e57a0 {align-self: center !important; justify-content: center; align-items: center; width: 100%; padding-top: 10px}
 }
 
 /* FOOTER CSS (ID: 47) */
@@ -236,7 +258,7 @@
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-#brxe-5f24fe {align-self: center !important; align-items: center; justify-content: center; display: flex; justify-items: flex-start; grid-auto-flow: column; grid-template-columns: 2; grid-template-rows: 1; margin-right: 0; margin-left: 0; max-width: 100%; flex-direction: column; text-align: center; padding-top: 5px; padding-bottom: 5px}
+#brxe-5f24fe {align-self: center !important; align-items: center; justify-content: center; display: flex; justify-items: flex-start; grid-auto-flow: column; grid-template-columns: 2; grid-template-rows: 1; margin-right: 0; margin-left: 0; max-width: 33%; flex-direction: column; text-align: center; padding-top: 5px; padding-bottom: 5px}
 }
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
@@ -284,7 +306,7 @@
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-#brxe-zjgudl {align-self: center !important; align-items: center; justify-content: flex-start; display: flex; justify-items: flex-start; grid-auto-flow: column; grid-template-columns: 2; grid-template-rows: 1; margin-right: 0; margin-left: 0; max-width: 45%; flex-direction: column; padding-top: 5px; padding-bottom: 5px}
+#brxe-zjgudl {align-self: center !important; align-items: center; justify-content: flex-start; display: flex; justify-items: flex-start; grid-auto-flow: column; grid-template-columns: 2; grid-template-rows: 1; margin-right: 0; margin-left: 0; max-width: 33%; padding-top: 5px; padding-bottom: 5px; flex-direction: column}
 }
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
@@ -324,7 +346,7 @@
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-#brxe-7f3e65 {margin-right: 0; margin-bottom: 5px; margin-left: 0; max-width: 50%; justify-content: center; align-self: center !important; align-items: center; padding-top: 5px; padding-bottom: 5px}
+#brxe-7f3e65 {margin-right: 0; margin-bottom: 5px; margin-left: 0; max-width: 33%; justify-content: center; align-self: center !important; align-items: center; padding-top: 5px; padding-bottom: 5px; flex-direction: row}
 }
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
@@ -413,7 +435,7 @@
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-#brxe-06900e {padding-right: 2px; padding-left: 2px; align-self: center !important; justify-content: center; align-items: center; flex-direction: column}
+#brxe-06900e {padding-right: 5px; padding-left: 5px; align-self: center !important; justify-content: center; align-items: center; flex-direction: row}
 }
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
@@ -448,13 +470,12 @@
 <body class="post-template-default single single-post postid-12 single-format-standard brx-body bricks-is-frontend wp-embed-responsive brx-wide">		<a class="skip-link" href="#brx-content" aria-label="Skip to main content">Skip to main content</a>
 
 					<a class="skip-link" href="#brx-footer" aria-label="Skip to footer">Skip to footer</a>
-			<header id="brx-header"><section id="brxe-1e57a0" class="brxe-section bricks-lazy-hidden"><nav id="brxe-ec7002" data-script-id="ec7002" class="brxe-nav-nested bricks-lazy-hidden" aria-label="Menu" data-toggle="mobile_landscape"><img width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20500%20500&#039;%3E%3C/svg%3E" class="brxe-image css-filter size-full bricks-lazy-hidden" alt="Military Housing Coalition logo" id="brxe-d22824" decoding="async" fetchpriority="high" data-src="https://ldavis09.github.io/MHC/wp-content/uploads/Logo.png" data-type="string" data-sizes="(max-width: 500px) 100vw, 500px" data-srcset="http://military-housing-coalition.local/wp-content/uploads/Logo.png 500w, http://military-housing-coalition.local/wp-content/uploads/Logo-150x150.png 150w"><ul id="brxe-7477d3" class="brxe-block brx-nav-nested-items bricks-lazy-hidden">
-<li class="menu-item"><a id="brxe-40a4a0" class="brxe-text-link" href="https://ldavis09.github.io/MHC/"><span class="icon"><i class="fas fa-house-chimney"></i></span><span class="text">Home</span></a></li>
+			<header id="brx-header"><section id="brxe-1e57a0" class="brxe-section bricks-lazy-hidden"><nav id="brxe-ec7002" data-script-id="ec7002" class="brxe-nav-nested bricks-lazy-hidden" aria-label="Menu" data-toggle="mobile_landscape"><a id="brxe-d22824" class="brxe-image tag" href="https://ldavis09.github.io/MHC/"><img width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20500%20500&#039;%3E%3C/svg%3E" class="css-filter size-full bricks-lazy-hidden" alt="Military Housing Coalition logo" decoding="async" fetchpriority="high" data-src="https://ldavis09.github.io/MHC/wp-content/uploads/Logo.png" data-type="string" data-sizes="(max-width: 500px) 100vw, 500px" data-srcset="http://military-housing-coalition.local/wp-content/uploads/Logo.png 500w, http://military-housing-coalition.local/wp-content/uploads/Logo-150x150.png 150w"></a><ul id="brxe-7477d3" class="brxe-container brx-nav-nested-items bricks-lazy-hidden">
 <li id="brxe-a96d31" data-script-id="a96d31" class="brxe-dropdown bricks-lazy-hidden caret">
 <div class="brx-submenu-toggle">
 <a href="https://ldavis09.github.io/MHC/?page_id=19">About Us</a><button aria-expanded="false" aria-label="Toggle dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 12 12" fill="none"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button>
 </div>
-<ul class="brxe-div brx-dropdown-content bricks-lazy-hidden">
+<ul id="brxe-b3d882" class="brxe-div brx-dropdown-content bricks-lazy-hidden">
 <li class="menu-item"><a id="brxe-de7168" class="brxe-text-link" href="https://ldavis09.github.io/MHC/about-us/">About Us</a></li>
 <li class="menu-item"><a id="brxe-dec6d4" class="brxe-text-link" href="https://ldavis09.github.io/MHC/our-team/">Our Team</a></li>
 <li class="menu-item"><a class="brxe-text-link" href="https://ldavis09.github.io/MHC/?page_id=405">Our Mission</a></li>
@@ -515,11 +536,11 @@
 		<div class="bricks-post-meta-wrapper">
 			
 			<ul class="brxe-post-sharing brand-colors">
-<li data-balloon="Share on Facebook" data-balloon-pos="top"><a class="facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fldavis09.github.io%2FMHC%2Fsample-post-2%2F%3Fsimply_static_page%3D453&#038;picture=&#038;title=Sample%20Post%20%232" rel="nofollow" aria-label="Facebook"><svg version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M455.27,32h-398.54l-1.01757e-06,4.11262e-10c-13.6557,0.00551914 -24.7245,11.0743 -24.73,24.73v398.54l-5.44608e-07,-0.00145325c0.00471643,13.6557 11.0728,24.7251 24.7285,24.7315h199.271v-176h-53.55v-64h53.55v-51c0,-57.86 40.13,-89.36 91.82,-89.36c24.73,0 51.33,1.86 57.51,2.68v60.43h-41.18c-28.12,0 -33.48,13.3 -33.48,32.9v44.35h67l-8.75,64h-58.25v176h124.6l-1.14527e-06,4.62819e-10c13.6557,-0.00551794 24.7245,-11.0743 24.73,-24.73v-398.54l5.45583e-07,0.00145607c-0.00471487,-13.6557 -11.0728,-24.7251 -24.7285,-24.7315Z" fill="#000"></path></svg></a></li>
-<li data-balloon="Share on X" data-balloon-pos="top"><a class="twitter" href="https://x.com/share?text=Sample%20Post%20%232&#038;url=https%3A%2F%2Fldavis09.github.io%2FMHC%2Fsample-post-2%2F%3Fsimply_static_page%3D453" rel="nofollow" aria-label="X"><svg version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg></a></li>
-<li data-balloon="Share on LinkedIn" data-balloon-pos="top"><a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&#038;url=https%3A%2F%2Fldavis09.github.io%2FMHC%2Fsample-post-2%2F%3Fsimply_static_page%3D453&#038;title=Sample%20Post%20%232" rel="nofollow" aria-label="LinkedIn"><svg version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M444.17,32h-373.89c-20.43,0 -38.28,14.7 -38.28,34.89v374.72c0,20.3 17.85,38.39 38.28,38.39h373.78c20.54,0 35.94,-18.21 35.94,-38.39v-374.72c0.12,-20.19 -15.4,-34.89 -35.83,-34.89Zm-273.3,373.43h-64.18v-199.55h64.18Zm-29.87,-229.89h-0.46c-20.54,0 -33.84,-15.29 -33.84,-34.43c0,-19.49 13.65,-34.42 34.65,-34.42c21,0 33.85,14.82 34.31,34.42c-0.01,19.14 -13.31,34.43 -34.66,34.43Zm264.43,229.89h-64.18v-109.11c0,-26.14 -9.34,-44 -32.56,-44c-17.74,0 -28.24,12 -32.91,23.69c-1.75,4.2 -2.22,9.92 -2.22,15.76v113.66h-64.18v-199.55h64.18v27.77c9.34,-13.3 23.93,-32.44 57.88,-32.44c42.13,0 74,27.77 74,87.64Z" fill="#000"></path></svg></a></li>
-<li data-balloon="Share on Pinterest" data-balloon-pos="top"><a class="pinterest" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fldavis09.github.io%2FMHC%2Fsample-post-2%2F%3Fsimply_static_page%3D453&#038;media=" rel="nofollow" aria-label="Pinterest"><svg version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M256,32c-123.7,0 -224,100.3 -224,224c0,91.7 55.2,170.5 134.1,205.2c-0.6,-15.6 -0.1,-34.4 3.9,-51.4c4.3,-18.2 28.8,-122.1 28.8,-122.1c0,0 -7.2,-14.3 -7.2,-35.4c0,-33.2 19.2,-58 43.2,-58c20.4,0 30.2,15.3 30.2,33.6c0,20.5 -13.1,51.1 -19.8,79.5c-5.6,23.8 11.9,43.1 35.4,43.1c42.4,0 71,-54.5 71,-119.1c0,-49.1 -33.1,-85.8 -93.2,-85.8c-67.9,0 -110.3,50.7 -110.3,107.3c0,19.5 5.8,33.3 14.8,43.9c4.1,4.9 4.7,6.9 3.2,12.5c-1.1,4.1 -3.5,14 -4.6,18c-1.5,5.7 -6.1,7.7 -11.2,5.6c-31.3,-12.8 -45.9,-47 -45.9,-85.6c0,-63.6 53.7,-139.9 160.1,-139.9c85.5,0 141.8,61.9 141.8,128.3c0,87.9 -48.9,153.5 -120.9,153.5c-24.2,0 -46.9,-13.1 -54.7,-27.9c0,0 -13,51.6 -15.8,61.6c-4.7,17.3 -14,34.5 -22.5,48c20.1,5.9 41.4,9.2 63.5,9.2c123.7,0 224,-100.3 224,-224c0.1,-123.8 -100.2,-224.1 -223.9,-224.1Z" fill="#000"></path></svg></a></li>
-<li data-balloon="Share via email" data-balloon-pos="top"><a class="email" href="mailto:?subject=Sample%20Post%20%232&amp;body=https%3A%2F%2Fldavis09.github.io%2FMHC%2Fsample-post-2%2F%3Fsimply_static_page%3D453" rel="nofollow" aria-label="Email"><svg version="1.1" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M27.5,5h-25c-1.4,0 -2.5,1.1 -2.5,2.5v15c0,1.4 1.1,2.5 2.5,2.5h25c1.4,0 2.5,-1.1 2.5,-2.5v-15c0,-1.4 -1.1,-2.5 -2.5,-2.5Zm-16.7,10.9l-7,6c-0.1,0.1 -0.2,0.1 -0.3,0.1c-0.1,0 -0.3,-0.1 -0.4,-0.2c-0.2,-0.2 -0.2,-0.5 0.1,-0.7l7,-6c0.2,-0.2 0.5,-0.2 0.7,0.1c0.2,0.2 0.1,0.5 -0.1,0.7Zm3.9,0.1c-0.7,0 -1.5,-0.2 -2,-0.6l-9.5,-6.5c-0.2,-0.1 -0.3,-0.5 -0.1,-0.7c0.1,-0.2 0.4,-0.3 0.7,-0.1l9.5,6.5c0.8,0.6 2.1,0.6 2.9,0l10,-6.5c0.2,-0.2 0.5,-0.1 0.7,0.1c0.2,0.2 0.1,0.5 -0.1,0.7l-10,6.5c-0.6,0.4 -1.3,0.6 -2.1,0.6Zm12.2,5.8c-0.1,0.1 -0.2,0.2 -0.4,0.2c-0.1,0 -0.2,0 -0.3,-0.1l-7,-6c-0.2,-0.2 -0.2,-0.5 -0.1,-0.7c0.1,-0.2 0.5,-0.2 0.7,-0.1l7,6c0.2,0.2 0.3,0.5 0.1,0.7Z" fill="#fff"></path></svg></a></li>
+<li data-balloon="Share on Facebook" data-balloon-pos="top"><a class="facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fldavis09.github.io%2FMHC%2Fsample-post-2%2F%3Fsimply_static_page%3D575&#038;picture=&#038;title=Sample%20Post%20%232" rel="nofollow" aria-label="Facebook"><svg version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M455.27,32h-398.54l-1.01757e-06,4.11262e-10c-13.6557,0.00551914 -24.7245,11.0743 -24.73,24.73v398.54l-5.44608e-07,-0.00145325c0.00471643,13.6557 11.0728,24.7251 24.7285,24.7315h199.271v-176h-53.55v-64h53.55v-51c0,-57.86 40.13,-89.36 91.82,-89.36c24.73,0 51.33,1.86 57.51,2.68v60.43h-41.18c-28.12,0 -33.48,13.3 -33.48,32.9v44.35h67l-8.75,64h-58.25v176h124.6l-1.14527e-06,4.62819e-10c13.6557,-0.00551794 24.7245,-11.0743 24.73,-24.73v-398.54l5.45583e-07,0.00145607c-0.00471487,-13.6557 -11.0728,-24.7251 -24.7285,-24.7315Z" fill="#000"></path></svg></a></li>
+<li data-balloon="Share on X" data-balloon-pos="top"><a class="twitter" href="https://x.com/share?text=Sample%20Post%20%232&#038;url=https%3A%2F%2Fldavis09.github.io%2FMHC%2Fsample-post-2%2F%3Fsimply_static_page%3D575" rel="nofollow" aria-label="X"><svg version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg></a></li>
+<li data-balloon="Share on LinkedIn" data-balloon-pos="top"><a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&#038;url=https%3A%2F%2Fldavis09.github.io%2FMHC%2Fsample-post-2%2F%3Fsimply_static_page%3D575&#038;title=Sample%20Post%20%232" rel="nofollow" aria-label="LinkedIn"><svg version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M444.17,32h-373.89c-20.43,0 -38.28,14.7 -38.28,34.89v374.72c0,20.3 17.85,38.39 38.28,38.39h373.78c20.54,0 35.94,-18.21 35.94,-38.39v-374.72c0.12,-20.19 -15.4,-34.89 -35.83,-34.89Zm-273.3,373.43h-64.18v-199.55h64.18Zm-29.87,-229.89h-0.46c-20.54,0 -33.84,-15.29 -33.84,-34.43c0,-19.49 13.65,-34.42 34.65,-34.42c21,0 33.85,14.82 34.31,34.42c-0.01,19.14 -13.31,34.43 -34.66,34.43Zm264.43,229.89h-64.18v-109.11c0,-26.14 -9.34,-44 -32.56,-44c-17.74,0 -28.24,12 -32.91,23.69c-1.75,4.2 -2.22,9.92 -2.22,15.76v113.66h-64.18v-199.55h64.18v27.77c9.34,-13.3 23.93,-32.44 57.88,-32.44c42.13,0 74,27.77 74,87.64Z" fill="#000"></path></svg></a></li>
+<li data-balloon="Share on Pinterest" data-balloon-pos="top"><a class="pinterest" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fldavis09.github.io%2FMHC%2Fsample-post-2%2F%3Fsimply_static_page%3D575&#038;media=" rel="nofollow" aria-label="Pinterest"><svg version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M256,32c-123.7,0 -224,100.3 -224,224c0,91.7 55.2,170.5 134.1,205.2c-0.6,-15.6 -0.1,-34.4 3.9,-51.4c4.3,-18.2 28.8,-122.1 28.8,-122.1c0,0 -7.2,-14.3 -7.2,-35.4c0,-33.2 19.2,-58 43.2,-58c20.4,0 30.2,15.3 30.2,33.6c0,20.5 -13.1,51.1 -19.8,79.5c-5.6,23.8 11.9,43.1 35.4,43.1c42.4,0 71,-54.5 71,-119.1c0,-49.1 -33.1,-85.8 -93.2,-85.8c-67.9,0 -110.3,50.7 -110.3,107.3c0,19.5 5.8,33.3 14.8,43.9c4.1,4.9 4.7,6.9 3.2,12.5c-1.1,4.1 -3.5,14 -4.6,18c-1.5,5.7 -6.1,7.7 -11.2,5.6c-31.3,-12.8 -45.9,-47 -45.9,-85.6c0,-63.6 53.7,-139.9 160.1,-139.9c85.5,0 141.8,61.9 141.8,128.3c0,87.9 -48.9,153.5 -120.9,153.5c-24.2,0 -46.9,-13.1 -54.7,-27.9c0,0 -13,51.6 -15.8,61.6c-4.7,17.3 -14,34.5 -22.5,48c20.1,5.9 41.4,9.2 63.5,9.2c123.7,0 224,-100.3 224,-224c0.1,-123.8 -100.2,-224.1 -223.9,-224.1Z" fill="#000"></path></svg></a></li>
+<li data-balloon="Share via email" data-balloon-pos="top"><a class="email" href="mailto:?subject=Sample%20Post%20%232&amp;body=https%3A%2F%2Fldavis09.github.io%2FMHC%2Fsample-post-2%2F%3Fsimply_static_page%3D575" rel="nofollow" aria-label="Email"><svg version="1.1" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M27.5,5h-25c-1.4,0 -2.5,1.1 -2.5,2.5v15c0,1.4 1.1,2.5 2.5,2.5h25c1.4,0 2.5,-1.1 2.5,-2.5v-15c0,-1.4 -1.1,-2.5 -2.5,-2.5Zm-16.7,10.9l-7,6c-0.1,0.1 -0.2,0.1 -0.3,0.1c-0.1,0 -0.3,-0.1 -0.4,-0.2c-0.2,-0.2 -0.2,-0.5 0.1,-0.7l7,-6c0.2,-0.2 0.5,-0.2 0.7,0.1c0.2,0.2 0.1,0.5 -0.1,0.7Zm3.9,0.1c-0.7,0 -1.5,-0.2 -2,-0.6l-9.5,-6.5c-0.2,-0.1 -0.3,-0.5 -0.1,-0.7c0.1,-0.2 0.4,-0.3 0.7,-0.1l9.5,6.5c0.8,0.6 2.1,0.6 2.9,0l10,-6.5c0.2,-0.2 0.5,-0.1 0.7,0.1c0.2,0.2 0.1,0.5 -0.1,0.7l-10,6.5c-0.6,0.4 -1.3,0.6 -2.1,0.6Zm12.2,5.8c-0.1,0.1 -0.2,0.2 -0.4,0.2c-0.1,0 -0.2,0 -0.3,-0.1l-7,-6c-0.2,-0.2 -0.2,-0.5 -0.1,-0.7c0.1,-0.2 0.5,-0.2 0.7,-0.1l7,6c0.2,0.2 0.3,0.5 0.1,0.7Z" fill="#fff"></path></svg></a></li>
 </ul>		</div>
 
 		<h3>Related posts</h3>
@@ -565,15 +586,15 @@
 </div></a></nav></article>
 
 </main><footer id="brx-footer"><section id="brxe-fc6cbc" class="brxe-section bricks-lazy-hidden"><div id="brxe-06900e" class="brxe-container bricks-lazy-hidden">
-<div id="brxe-5f24fe" class="brxe-container bricks-lazy-hidden"><div class="brxe-block bricks-lazy-hidden"><div data-script-id="mdtapp" class="brxe-code">
+<div id="brxe-5f24fe" class="brxe-container bricks-lazy-hidden"><div data-script-id="mdtapp" class="brxe-code">
 <script type="text/javascript">gnp_url = 'military-housing-coalition';gnp_num = '4';</script>
 <script src="https://greatnonprofits.org/js/api/badge_stars.js" type="text/javascript"></script>
 <noscript> <a href="https://greatnonprofits.org/org/military-housing-coalition/?badge=1"> <img alt="Review Military Housing Coalition on Great Nonprofits" title="Review Military Housing Coalition on Great Nonprofits" src="//cdn.greatnonprofits.org/images/great-nonprofits.gif?id=997663683"> </a>
 </noscript>
-</div></div></div>
+</div></div>
 <div id="brxe-zjgudl" class="brxe-container bricks-lazy-hidden"><div class="brxe-block bricks-lazy-hidden">
 <h4 id="brxe-fabzxq" class="brxe-heading">About Us</h4>
-<a id="brxe-ecbfgg" class="brxe-text-link" href="https://ldavis09.github.io/MHC/policies/privacy-policy/">Privacy Policy</a><a id="brxe-odlwcm" class="brxe-text-link" href="https://ldavis09.github.io/MHC/?page_id=19">About Us</a><a id="brxe-ldksbf" class="brxe-text-link" href="https://ldavis09.github.io/MHC/contact-us/">Contact Us</a>
+<a id="brxe-ecbfgg" class="brxe-text-link" href="https://ldavis09.github.io/MHC/policies/privacy-policy/">Privacy Policy</a><a id="brxe-odlwcm" class="brxe-text-link" href="https://ldavis09.github.io/MHC/?page_id=19">About Us</a><a id="brxe-ldksbf" class="brxe-text-link" href="https://ldavis09.github.io/MHC/contact-us/">Get Help</a>
 </div></div>
 <div id="brxe-7f3e65" class="brxe-container bricks-lazy-hidden"><div class="brxe-block bricks-lazy-hidden">
 <h4 id="brxe-d5f872" class="brxe-heading">Miltary Housing Coalition</h4>
@@ -591,9 +612,9 @@
 </div>
 </div>
 <ul id="brxe-8a01e0" class="brxe-social-icons">
-<li class="repeater-item no-link"><i class="fab fa-x-twitter"></i></li>
-<li class="repeater-item no-link"><i class="fab fa-facebook-square"></i></li>
-<li class="repeater-item no-link"><i class="fab fa-instagram"></i></li>
+<li class="repeater-item has-link"><a href="https://twitter.com/militaryhouseco"><i class="fab fa-x-twitter"></i></a></li>
+<li class="repeater-item has-link"><a href="https://www.facebook.com/militaryhousingcoalition"><i class="fab fa-facebook-square"></i></a></li>
+<li class="repeater-item has-link"><a href="https://www.instagram.com/MilitaryHousingCoalition/"><i class="fab fa-instagram"></i></a></li>
 </ul>
 </div></div>
 <div id="brxe-101986" class="brxe-container bricks-lazy-hidden"><div id="brxe-ghlenf" class="brxe-block bricks-lazy-hidden">
@@ -602,7 +623,7 @@
 <p>Let&#8217;s keep in touch</p>
 </div>		<form id="brxe-2b7ccb" data-script-id="2b7ccb" class="brxe-form" method="post" data-element-id="2b7ccb">
 						<div class="form-group">
-				<input id="form-field-9fba8b" name="form-field-287eee" aria-label="Email" type="email" value placeholder="Your email address" required>
+				<input id="form-field-7ccc9a" name="form-field-287eee" aria-label="Email" type="email" value placeholder="Your email address" required>
 				
 				
 							</div>
@@ -622,7 +643,7 @@
 <div class="brxe-block bricks-lazy-hidden"><div id="brxe-cbplnd" class="brxe-text">
 <p>Military Housing Coalition is a 501c3 nonprofit driven by dedicated volunteers. Committed to making a positive impact, we strive to enhance the lives of our military community through charitable contributions. Join us in supporting those who serve and sacrifice for our nations.</p>
 </div></div></section></footer><link rel="stylesheet" id="bricks-tooltips-css" href="https://ldavis09.github.io/MHC/wp-content/themes/bricks/assets/css/libs/tooltips.min.css?ver=1705370348" media="all">
-<script id="bricks-scripts-js-extra">var bricksData = {"debug":"","locale":"en_US","ajaxUrl":"https:\/\/ldavis09.github.io\/MHC\/wp-admin\/admin-ajax.php","restApiUrl":"https:\/\/ldavis09.github.io\/MHC\/wp-json\/bricks\/v1\/","nonce":"07ec98f141","wpRestNonce":"7e06605459","postId":"12","recaptchaIds":[],"animatedTypingInstances":[],"videoInstances":[],"splideInstances":[],"tocbotInstances":[],"swiperInstances":[],"queryLoopInstances":[],"interactions":[],"facebookAppId":"","offsetLazyLoad":"300","headerPosition":"top"};</script>
+<script id="bricks-scripts-js-extra">var bricksData = {"debug":"","locale":"en_US","ajaxUrl":"https:\/\/ldavis09.github.io\/MHC\/wp-admin\/admin-ajax.php","restApiUrl":"https:\/\/ldavis09.github.io\/MHC\/wp-json\/bricks\/v1\/","nonce":"3f10492ab2","wpRestNonce":"089977b5d8","postId":"12","recaptchaIds":[],"animatedTypingInstances":[],"videoInstances":[],"splideInstances":[],"tocbotInstances":[],"swiperInstances":[],"queryLoopInstances":[],"interactions":[],"facebookAppId":"","offsetLazyLoad":"300","headerPosition":"top"};</script>
 <script src="https://ldavis09.github.io/MHC/wp-content/themes/bricks/assets/js/bricks.min.js?ver=1705370348" id="bricks-scripts-js"></script>
 <script src="https://ldavis09.github.io/MHC/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async data-wp-strategy="async"></script>
 </body>
